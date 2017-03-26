@@ -25,7 +25,7 @@ class ResourceLoader:
                 extension = ex[1]
                 real = name + "." + ex[0]
                 if extension == ".png":
-                    self.files[real] = pygame.image.load(path)
+                    self.files[real] = pygame.image.load(path).convert()
                 elif extension == ".wav":
                     self.files[real] = pygame.mixer.Sound(path)
                 elif extension == ".ogg":

@@ -41,7 +41,7 @@ class GameWindow:
                 tick(last_time - start_time)
             pygame.display.update()
             last_time = time.time()
-            self.fps = int(1 / max(0.001, last_time - start_time))
+            self.fps = int((1 / max(0.001, last_time - start_time) + self.fps) / 2)
             print(self.fps)
 
     def stop(self):
