@@ -4,7 +4,7 @@ from stage import Stage
 from sprite import Sprite
 import pygame
 
-
+#hello world
 def main():
     pygame.mixer.init()
     pygame.init()
